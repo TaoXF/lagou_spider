@@ -24,7 +24,6 @@ class LagouSpider(object):
 		self.scheduler(classify_list)
 
 	def scheduler(self, classify_list):
-		# 调度方法 复制控制请求间隔时间
 		# 先请求第一页拿到总页数然后生成剩余页数的请求
 		# 调用解析方法 拿到结果 最后调用保存方法
 		# 当所有请求结束之后关闭数据库连接
