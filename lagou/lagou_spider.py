@@ -32,12 +32,10 @@ class LagouSpider(object):
 		for classify in classify_list:
 			total = self.first_page(classify)
 			if total:
-				time.sleep(1)
 				for i in range(2, int(total)+1):
 					url = classify.get('classify_href') + str(i) + '/?filterOption=3'
 					soup = BeautifulSoup(self.request_(url), "lxml")
 					self.save(self.pars(soup), classify)
-					time.sleep(1)
 
 		self.close_spider()
 
