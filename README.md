@@ -15,7 +15,7 @@ pip install pygal # 生成svg图片
 ```
 python3 lagou_spider.py
 ```
-大约一小时左右就能抓取完毕
+这网站居然没反爬!!
 
 ```
 python3 lagou_chart.py
